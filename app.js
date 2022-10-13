@@ -3,7 +3,7 @@ const addButton = document.querySelectorAll('.add-btn');
 const total = document.querySelector('.total'); 
 const buyButton = document.querySelector('.buy-btn');
 const totalTitle = document.querySelector('.total-title');
-
+let array = [];
 
 for (let i = 0; i < addButton.length; i++) {
   addButton[i].addEventListener('click', addToCart);
@@ -18,9 +18,10 @@ function addToCart(e) {
   let name = item.querySelector('.name').innerText;
   let price = parseInt(item.querySelector('.price').innerText.replace('$', ''));
   totalPrice = totalPrice + price;
-  console.log(totalPrice);
+  array.push({name: `${name}`, price: `${price}`, img: `${img}`});
+  console.log(array);
   newItemforCart(name, price, img);
-}
+};
 
 function newItemforCart(title, price, img) {
   let newItem = document.createElement('div');
