@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header id="header">
+    <nav>
+      <h2 class="logo">GB</h2>
+      <div class="nav-links">
+        <a href="#header">Home</a>
+        <a href="#footer">Contact</a>
+        <a href="#cart"><img class="cart-img" src="./Imgs/1152px-Font_Awesome_5_solid_shopping-cart.svg.png" alt=""></a>
+      </div>     
+    </nav>
+    
+    <h1>Gentlemen Boots</h1>   
+  </header>
+
+  <main>
+    <div class="products">
+      <div class="item">
+        <img class="photo" src="./Imgs/Brogue.jpg" alt="">
+        <div class="description">
+          <div class="name-and-price">
+            <h2 class="name">Brogue</h2>
+            <h2>-</h2>
+            <h2 class="price">$700</h2>
+          </div>
+          <div class="stock-and-btn">
+            <div class="stock">
+              <h3>Stock:</h3>
+              <h3>7</h3>
+            </div>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div> 
+      </div>
+
+
+      <div class="item">
+        <img class="photo" src="./Imgs/Borgue Dark Brown.jpg" alt="">
+        <div class="description">
+          <div class="name-and-price">
+            <h2 class="name">New Style</h2>
+            <h2>-</h2>
+            <h2 class="price">$250</h2>
+          </div>
+          <div class="stock-and-btn">
+            <div class="stock">
+              <h3>Stock:</h3>
+              <h3>7</h3>
+            </div>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div> 
+      </div>
+
+
+      <div class="item">
+        <img class="photo" src="./Imgs/Chelsea.jpg" alt="">
+        <div class="description">
+          <div class="name-and-price">
+            <h2 class="name">Chelsea</h2>
+            <h2>-</h2>
+            <h2 class="price">$200</h2>
+          </div>
+          <div class="stock-and-btn">
+            <div class="stock">
+              <h3>Stock:</h3>
+              <h3>7</h3>
+            </div>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div> 
+      </div>
+
+
+      <div class="item">
+        <img class="photo" src="./Imgs/Clarks Desert.webp" alt="">
+        <div class="description">
+          <div class="name-and-price">
+            <h2 class="name">Clarks Desert</h2>
+            <h2>-</h2>
+            <h2 class="price">$300</h2>
+          </div>
+          <div class="stock-and-btn">
+            <div class="stock">
+              <h3>Stock:</h3>
+              <h3>7</h3>
+            </div>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div> 
+      </div>
+
+
+      <div class="item">
+        <img class="photo" src="./Imgs/Hiking.jpg" alt="">
+        <div class="description">
+          <div class="name-and-price">
+            <h2 class="name">Hiking</h2>
+            <h2>-</h2>
+            <h2 class="price">$500</h2>
+          </div>
+          <div class="stock-and-btn">
+            <div class="stock">
+              <h3>Stock:</h3>
+              <h3>7</h3>
+            </div>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div> 
+      </div>
+
+
+      <div class="item">
+        <img class="photo" src="./Imgs/Jodhpur.jpg" alt="">
+        <div class="description">
+          <div class="name-and-price">
+            <h2 class="name">Jodhpur</h2>
+            <h2>-</h2>
+            <h2 class="price">$900</h2>
+          </div>
+          <div class="stock-and-btn">
+            <div class="stock">
+              <h3>Stock:</h3>
+              <h3>7</h3>
+            </div>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </main>
+
+  <section class="cart" id="cart">
+    <!-- <div class="cart-items">
+      <img class="img-on-cart" src="./Imgs/Brogue.jpg" alt="">
+      <h3>Brogue</h3>
+      <h3 class="price">$700</h3>
+      <input class="quantity" type="number" min="1" max="10">
+      <button class="remove">Remove</button>
+    </div>
+     -->
+  </section>
+
+  <section class="buy-section">
+    <h3 class="total">Total: $</h3>
+    <button class="buy-btn">Buy</button>
+  </section>
+  <footer id="footer">
+    <div class="contact">
+      <h3>Contact</h3>
+      <h4>48574-3757-3487</h4>
+    </div>
+    <div class="email">
+      <h3>Email</h3>
+      <h4>hkrcrm@gmail.com</h4>
+    </div>
+  </footer>
+</body>
+<script src="./app.js"></script>
+</html>
+
+<!-- 1. Crear una página donde se mostrarán los productos.
+2. Deberá tener al menos un nav bar y un footer aparte de la sección
+ de los productos.
+3. Persistencia de datos usando local storage.
+4. Los productos deberán tener al menos un nombre, una imágen, el precio 
+y un botón para agregar al carrito.
+5. Deberán tener  para mostrar los productos agregados (carrito).
+6. En el carrito se deben ir listando los productos que se agreguen.
+7. Deberá tener un total dónde se sumen los precios de los productos agregados.
+8. Deberá tener un botón para realizar la compra.
+
+Retos opcionales
+- Incrementar o disminuir la cantidad de productos en el carrito.
+- Manejar un stock. Si el producto tiene un stock de 5 unidades, no 
+dejará agregar más de 6 unidades del mismo producto.
+- Descontar del stock. Si la compra de un producto con un stock de 5 unidades
+es de 3, el stock de ese producto deberá ser ahora de 2. -->

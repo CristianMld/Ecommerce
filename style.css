@@ -1,0 +1,185 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 7vh;
+  z-index: 1;
+  background-color: gray;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.logo {
+  margin-left: 20px;
+  font-size: 1.5vw;
+  font-family: 'Comforter Brush', sans-serif;
+}
+
+a {
+  margin: 3vw;
+  font-size: 1vw;
+  text-decoration: none;
+  color: black;
+}
+
+.cart-img {
+  display: flex;
+  width: 1.5vw;
+  margin-right: 20px;
+}
+
+.cart-img:hover {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6vw;
+  margin-top: 7vw;
+  font-family: 'Comforter Brush', sans-serif;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 5vw;
+  margin-top: 3vw;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 3vw;
+}
+
+.description {
+  display: flex;
+  justify-content: space-around;
+  gap: 2vw;
+  align-items: center;
+}
+
+.name-and-price {
+  display: flex;
+  gap: 1vw;
+  padding: 5px;
+  align-items: center;
+}
+
+.stock-and-btn {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.photo {
+  display: flex;
+  width: 90%;
+  height: 100%;
+}
+
+.photo:hover {
+  box-shadow: -5px -5px 2px 2px rgb(47, 47, 48);
+}
+
+.stock {
+  display: flex;
+  gap: 2px;
+}
+
+.add-btn {
+  font-size: 0.7vw;
+  border-radius: 10px;
+  background-color: rgb(127, 43, 148);
+  color: white;
+}
+
+h2 {
+  font-size: 1.6vw;
+}
+
+h3 {
+  font-size: 1.2vw;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cart-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  width: 50%;
+  gap: 2vw;
+  margin-top: 10vh;
+  margin-left: 25%;
+}
+
+.img-on-cart {
+  width: 100%;
+}
+
+.quantity {
+  width: 30%;
+}
+
+.remove {
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.buy-section {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.buy-btn {
+  background-color: blueviolet;
+  color: white;
+}
+
+footer {
+  height: 12vh;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  text-align: center;
+  margin-top: 10%;
+}
+
