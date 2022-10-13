@@ -256,8 +256,7 @@ footer {
   }
   
   .cart-items {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
     align-items: center;
     width: 100%;
     gap: 0.3vw;
@@ -265,7 +264,7 @@ footer {
   }
   
   .img-on-cart {
-    width: 100%;
+    width: 30%;
   }
   
   .quantity {
@@ -276,7 +275,7 @@ footer {
     background-color: crimson;
     color: white;
     border-radius: 10px;
-    width: 10%;
+    width: 5%;
   }
   
   .buy-section {
