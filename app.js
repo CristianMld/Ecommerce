@@ -19,7 +19,6 @@ function addToCart(e) {
   let price = parseInt(item.querySelector('.price').innerText.replace('$', ''));
   totalPrice = totalPrice + price;
   array.push({name: `${name}`, price: `${price}`, img: `${img}`});
-  console.log(array);
   newItemforCart(name, price, img);
 };
 
