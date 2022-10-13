@@ -1,5 +1,6 @@
 const cart = document.querySelector('.cart');
 const addButton = document.querySelectorAll('.add-btn');
+
 for (let i = 0; i < addButton.length; i++) {
   addButton[i].addEventListener('click', addToCart);
 };
@@ -40,3 +41,6 @@ function remove() {
   };
 }
 
+function updateTotal() {
+  
+}
