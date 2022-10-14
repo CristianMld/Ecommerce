@@ -16,8 +16,9 @@ function addToCart(e) {
   let item = button.parentElement.parentElement.parentElement;
   let img = item.querySelector('.photo').src;
   let name = item.querySelector('.name').innerText;
-  let price = parseInt(item.querySelector('.price').innerText.replace('$', ''));
-  totalPrice = totalPrice + price;
+  let price = item.querySelector('.price').innerText;
+  let priceInt = parseInt(item.querySelector('.price').innerText.replace('$', ''));
+  totalPrice = totalPrice + priceInt;
   array.push({name: `${name}`, price: `${price}`, img: `${img}`});
   newItemforCart(name, price, img);
 };
