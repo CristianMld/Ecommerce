@@ -148,14 +148,15 @@ h3 {
 }
 
 .quantity {
-  width: 30%;
+  width: 3vw;
 }
 
 .remove {
   background-color: crimson;
   color: white;
   border-radius: 10px;
-  width: 50%;
+  width: 6vw;
+  font-size: 1vw;
 }
 
 .buy-section {
@@ -170,6 +171,9 @@ h3 {
 .buy-btn {
   background-color: blueviolet;
   color: white;
+  width: 4vw;
+  font-size: 1vw;
+  border-radius: 20px;
 }
 
 footer {
@@ -207,7 +211,7 @@ footer {
   }
   
   a {
-    margin-right: 10vw;
+    margin-right: 5vw;
     font-size: 2vw;
     text-decoration: none;
     color: black;
@@ -216,7 +220,7 @@ footer {
   .cart-img {
     display: flex;
     width: 2.5vw;
-    margin-right: 20vw;
+    margin-right: 5vw;
   }
   
   .cart-img:hover {
@@ -225,7 +229,7 @@ footer {
   
   h1 {
     text-align: center;
-    font-size: 6vw;
+    font-size: 8vw;
     margin-top: 15vw;
     font-family: 'Comforter Brush', sans-serif;
   }
