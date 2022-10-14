@@ -300,12 +300,16 @@ footer {
     align-items: center;
     gap: 10px;
   }
+
+  .buy-section h3 {
+    font-size: 4vw;
+  }
   
   .buy-btn {
     background-color: blueviolet;
     color: white;
-    font-size: 3vw;
-    width: 10vw;
+    font-size: 4vw;
+    width: 15vw;
   }
 
   footer {
