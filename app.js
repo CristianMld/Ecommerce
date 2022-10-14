@@ -3,7 +3,7 @@ const addButton = document.querySelectorAll('.add-btn');
 const total = document.querySelector('.total'); 
 const buyButton = document.querySelector('.buy-btn');
 const totalTitle = document.querySelector('.total-title');
-let array = [];
+let dataArray = [];
 
 for (let i = 0; i < addButton.length; i++) {
   addButton[i].addEventListener('click', addToCart);
@@ -19,8 +19,9 @@ function addToCart(e) {
   let price = item.querySelector('.price').innerText;
   let priceInt = parseInt(item.querySelector('.price').innerText.replace('$', ''));
   totalPrice = totalPrice + priceInt;
-  array.push({name: `${name}`, price: `${price}`, img: `${img}`});
+  dataArray.push({name: `${name}`, price: `${price}`, img: `${img}`});
   newItemforCart(name, price, img);
+  remove();
 };
 
 function newItemforCart(title, price, img) {
@@ -35,7 +36,6 @@ function newItemforCart(title, price, img) {
   </div>`;
   newItem.innerHTML = newItemContent;
   cart.append(newItem); 
-  remove();
   total.innerHTML = `$${totalPrice}`;
 };
 
@@ -50,7 +50,7 @@ function remove() {
   };
 };
 
-buyButton.addEventListener('click', (e) => {
+buyButton.addEventListener('click', () => {
   cart.innerHTML = '';
   totalTitle.innerHTML = 'Thank you!';
   total.innerHTML = '';
