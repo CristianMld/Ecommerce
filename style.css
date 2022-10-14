@@ -265,19 +265,20 @@ footer {
   }
   
   .img-on-cart {
-    width: 100%;
+    width: 30%;
   }
   
   .quantity {
-    width: 80%;
+    width: 25%;
+    font-size: 1.5vw;
   }
   
   .remove {
     background-color: crimson;
     color: white;
     border-radius: 10px;
-    width: 25%;
-    font-size: 3vw;
+    width: 30%;
+    font-size: 2vw;
   }
   
   .buy-section {
