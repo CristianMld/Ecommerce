@@ -252,30 +252,32 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 70%;
   }
   
   .cart-items {
     display: flex;
     align-items: center;
     width: 100%;
-    gap: 0.3vw;
+    gap: 5vw;
     margin-top: 10vh;
+    margin-right: 20vw;
   }
   
   .img-on-cart {
-    width: 30%;
+    width: 100%;
   }
   
   .quantity {
-    width: 50%;
+    width: 80%;
   }
   
   .remove {
     background-color: crimson;
     color: white;
     border-radius: 10px;
-    width: 5%;
+    width: 25%;
+    font-size: 3vw;
   }
   
   .buy-section {
